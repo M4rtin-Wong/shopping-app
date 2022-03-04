@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">comp4342_project</string>
+    <string name="btn_link_to_signup">Have not joined yet?</string>
+    <string name="user_title">user info</string>
+    <string name="go_to_login_page"><b><u>Login page</u></b></string>
+    <string name="go_to_signup_page"><b><u>Signup page</u></b></string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="email">Email Address</string>
+    <string name="gender">Gender</string>
+    <string name="phone">Phone number</string>
+    <string name="room">Room</string>
+    <string name="building">Building</string>
+    <string name="district">District</string>
+    <string name="birth_Date">Birth Date</string>
+    <string name="change_Inf">Change Information</string>
+    <string name="change_password">Change Password</string>
+    <string name="transaction_record">Transaction record</string>
+    <string name="passwordAsking">Please enter your password:</string>
+    <string name="newPasswordAsking">Please enter your new password:</string>
+    <string name = "transactionRecord"><b>Transaction record</b></string>
+    <string name="ok">OK</string>
+    <string name="maleOrFemale">Male/ Female</string>
+    <string name="password">Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="empty" />
+
+</resources>

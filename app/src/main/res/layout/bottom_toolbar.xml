@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FF8C00"
+    android:paddingVertical="5dp"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/toolbarHome"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_home" />
+
+    <ImageView
+        android:id="@+id/toolbarUser"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_baseline_person_24" />
+
+    <ImageView
+        android:id="@+id/toolbarCart"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_shopping_cart" />
+
+    <ImageView
+        android:id="@+id/toolbarExit"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_exit" />
+
+</LinearLayout>

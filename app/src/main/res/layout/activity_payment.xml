@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/activity_payment"
+    android:paddingLeft="@dimen/padding_horizontal"
+    android:paddingRight="@dimen/padding_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/cardpayment"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".7">
+
+            <LinearLayout
+                android:id="@+id/payment_amount_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/payment_amount_holder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Payment Amount"
+                    android:textColor="@color/payment_text_color"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/card_owner_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/payment_amount_layout"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/background_edit_btn"
+                android:hint="Name of Card Owner"
+                android:inputType="textPersonName"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingLeft="15dp" />
+
+            <EditText
+                android:id="@+id/card_number"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/card_owner_name"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/background_edit_btn"
+                android:hint="Card Number"
+                android:inputType="phone"
+                android:lines="1"
+                android:maxLength="19"
+                android:maxLines="1"
+                android:paddingLeft="15dp" />
+
+            <LinearLayout
+                android:id="@+id/expiry_date_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_number"
+                android:layout_marginTop="15dp"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/expiry_date"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/card_owner_name"
+                    android:layout_weight=".50"
+                    android:background="@drawable/background_edit_btn"
+                    android:hint="Expiry Date(mmYY)"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="5"
+                    android:maxLines="1"
+                    android:paddingLeft="15dp" />
+
+
+
+                <EditText
+                    android:id="@+id/card_cvc"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight=".45"
+                    android:background="@drawable/background_edit_btn"
+                    android:hint="CVC"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLength="3"
+                    android:maxLines="1"
+                    android:paddingLeft="15dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/paymentbutton_paynow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expiry_date_layout"
+                android:layout_marginTop="15dp"
+                android:padding="5dp"
+                android:text="Pay Now"
+                android:textColor="@android:color/white" />
+            <Button
+                android:id="@+id/button_cancalpayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paymentbutton_paynow"
+                android:layout_marginTop="15dp"
+                android:padding="5dp"
+                android:text="Cancal Payment"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/payment_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/card_owner_name"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:fontFamily="sans-serif"
+                android:paddingRight="10dp"
+                android:textColor="@color/payment_text_color"
+                android:textSize="25sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
